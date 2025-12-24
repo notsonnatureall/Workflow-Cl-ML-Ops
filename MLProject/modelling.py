@@ -1,6 +1,5 @@
 import pandas as pd
 import mlflow
-import dagshub
 import argparse
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
@@ -8,8 +7,6 @@ from sklearn.model_selection import train_test_split
 parser = argparse.ArgumentParser()
 parser.add_argument("--n_estimators", type=int, default=100)
 args = parser.parse_args()
-
-dagshub.init(repo_owner='notsonnatureall', repo_name='ML-OPS', mlflow=True)
 
 def run():
     df = pd.read_csv('financial_regression_preprocessing.csv')
