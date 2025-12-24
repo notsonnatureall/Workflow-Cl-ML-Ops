@@ -1,4 +1,4 @@
-MLProjectname: Basic MLflow CI
+name: Basic MLflow CI
 
 on:
   push:
