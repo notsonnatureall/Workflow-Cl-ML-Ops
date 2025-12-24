@@ -1,4 +1,6 @@
-name: Gold_Price_Basic_Project
+name: Financial Prediction
+
+conda_env: conda.yaml
 
 entry_points:
   main:
