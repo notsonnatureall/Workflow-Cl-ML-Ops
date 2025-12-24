@@ -25,4 +25,4 @@ jobs:
           MLFLOW_TRACKING_PASSWORD: ${{ secrets.DAGSHUB_TOKEN }}
         run: |
           cd MLProject
-          mlflow run . -P n_estimators=50
+          mlflow run . -P n_estimators=50 --env-manager local
