@@ -29,3 +29,9 @@ jobs:
         run: |
           cd MLProject
           mlflow run . -P n_estimators=100
+
+      - name: Archive MLflow artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: model-result
+          path: MLProject/mlruns
